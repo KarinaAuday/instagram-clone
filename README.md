@@ -1,4 +1,4 @@
-# 📸 Instagram Clone
+# Instagram Clone
 
 Una aplicación web completa de tipo red social (clon de Instagram) desarrollada con **Node.js + Express** en el backend, **React** en el frontend y **PostgreSQL** como base de datos.
 
@@ -15,7 +15,7 @@ Una aplicación web completa de tipo red social (clon de Instagram) desarrollada
 
 ---
 
-## 🚀 Características
+##  Características
 
 ### ✅ Autenticación
 - Registro de usuarios con validación
@@ -45,7 +45,7 @@ Una aplicación web completa de tipo red social (clon de Instagram) desarrollada
 
 ---
 
-## 📊 Stack Tecnológico
+##  Stack Tecnológico
 
 ### Backend
 ```
@@ -186,7 +186,7 @@ npm start
 
 ---
 
-## 🎮 Uso
+## Uso
 
 ### 1. Registrarse
 1. Abre http://localhost:3000
@@ -221,7 +221,7 @@ npm start
 
 ---
 
-## 🔌 API Endpoints
+##  API Endpoints
 
 ### Base URL
 ```
@@ -462,7 +462,7 @@ fecha_creacion    TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 ---
 
-## 📚 Documentación Adicional
+##  Documentación Adicional
 
 - **Backend:** Ver `instagram-api/README.md` para detalles técnicos
 - **Backend Setup:** Ver `instagram-api/SETUP.md` para instalación
@@ -471,7 +471,7 @@ fecha_creacion    TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Error: "Cannot connect to database"
 - Verifica que PostgreSQL está corriendo
@@ -494,16 +494,11 @@ fecha_creacion    TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 ---
 
-## 👨‍💻 Autor
+##  Autor
 
 **Karina Auday**
 - GitHub: [@KarinaAuday](https://github.com/KarinaAuday)
 
 
----
 
-¡Gracias por usar Instagram Clone! 🎉
-
-```
-Made with ❤️ using Node.js + React
 ```
