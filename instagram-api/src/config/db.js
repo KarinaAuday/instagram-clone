@@ -3,7 +3,7 @@ const { Pool } = require('pg');
 require('dotenv').config();
 
 // ════════════════════════════════════════════════════════════
-// 📊 POOL DE CONEXIONES A POSTGRESQL
+// POOL DE CONEXIONES A POSTGRESQL
 // ════════════════════════════════════════════════════════════
 const pool = new Pool({
   user: process.env.DB_USER,
@@ -15,20 +15,20 @@ const pool = new Pool({
 
 // Evento de conexión exitosa
 pool.on('connect', () => {
-  console.log('✅ Conexión a PostgreSQL establecida');
+  console.log(' Conexión a PostgreSQL establecida');
 });
 
 // Evento de error en la conexión
 pool.on('error', (err) => {
-  console.error('❌ Error en el pool de PostgreSQL:', err);
+  console.error(' Error en el pool de PostgreSQL:', err);
 });
 
 // ════════════════════════════════════════════════════════════
-// 📝 CREAR TABLAS (si no existen)
+//  CREAR TABLAS (si no existen)
 // ════════════════════════════════════════════════════════════
 const crearTablas = async () => {
   try {
-    // 1️⃣ Tabla de usuarios
+    //  Tabla de usuarios
     await pool.query(`
       CREATE TABLE IF NOT EXISTS usuarios (
         id SERIAL PRIMARY KEY,
@@ -41,9 +41,9 @@ const crearTablas = async () => {
         fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       );
     `);
-    console.log('✅ Tabla usuarios lista');
+    console.log(' Tabla usuarios lista');
 
-    // 2️⃣ Tabla de publicaciones
+    //  Tabla de publicaciones
     await pool.query(`
       CREATE TABLE IF NOT EXISTS publicaciones (
         id SERIAL PRIMARY KEY,
@@ -54,17 +54,17 @@ const crearTablas = async () => {
         fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       );
     `);
-    console.log('✅ Tabla publicaciones lista');
+    console.log(' Tabla publicaciones lista');
 
-    // 3️⃣ Crear índices para optimizar búsquedas
+    //  Crear índices para optimizar búsquedas
     await pool.query(`
       CREATE INDEX IF NOT EXISTS idx_publicaciones_usuario_id 
       ON publicaciones(usuario_id);
     `);
-    console.log('✅ Índices creados');
+    console.log('Índices creados');
 
   } catch (err) {
-    console.error('❌ Error al crear tablas:', err);
+    console.error('Error al crear tablas:', err);
   }
 };
 
