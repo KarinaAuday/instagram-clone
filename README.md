@@ -491,18 +491,6 @@ fecha_creacion    TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 ---
 
-## 🚀 Próximas Mejoras (Ideas)
-
-- [ ] Comentarios en publicaciones
-- [ ] Sistema de seguimiento (follow/unfollow)
-- [ ] Búsqueda de usuarios
-- [ ] Notificaciones
-- [ ] Mensajes directos
-- [ ] Histórico de actividad
-- [ ] Temas oscuro/claro
-- [ ] Carga de imágenes local
-- [ ] Validación con email
-- [ ] Recuperación de contraseña
 
 ---
 
@@ -510,45 +498,7 @@ fecha_creacion    TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 **Karina Auday**
 - GitHub: [@KarinaAuday](https://github.com/KarinaAuday)
-- Email: karina.auday@example.com
 
----
-
-## 📝 Licencia
-
-Este proyecto está bajo la licencia **ISC**.
-
----
-
-## 🙏 Agradecimientos
-
-- Inspiración: Instagram
-- Comunidad de desarrolladores
-- Stack Open Source
-
----
-
-## 📞 Soporte
-
-¿Preguntas o problemas? 
-- Abre un Issue en GitHub
-- Contacta por email
-
----
-
-**Última actualización:** Junio 2024
-
----
-
-## 📊 Estadísticas del Proyecto
-
-- **Líneas de código backend:** ~1,500+
-- **Líneas de código frontend:** ~1,000+
-- **Archivos:** 20+
-- **Endpoints API:** 9
-- **Componentes React:** 4
-- **Tablas BD:** 2
-- **Tiempo de desarrollo:** ~8 horas
 
 ---
 
