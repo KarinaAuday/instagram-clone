@@ -1,0 +1,24 @@
+# Dependencies
+instagram-api/node_modules/
+instagram-frontend/node_modules/
+
+# Environment variables
+instagram-api/.env
+instagram-frontend/.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
